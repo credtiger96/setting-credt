@@ -73,9 +73,7 @@ Plugin 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on 
 
-
-
-"""""""""""""""""""""""
+"""""""""""""""""""""""""
 "Plugins + Plugin Keymap 
 "
 """"""""""""""""""""""""
@@ -84,8 +82,11 @@ Plugin 'The-NERD-tree'
 nmap <F7> :NERDTreeToggle<CR> 
 
 " sidebar indicating function, global variable list
-Plugin 'Taglist' 
+" Plugin 'Taglist' 
 nmap <F8> :Tlist<CR>
+
+let Tlist_Ctags_Cmd='/usr/bin/ctags'
+let Tlist_Use_Right_Window=1
 
 " Auto Completion
 Plugin 'AutoComplPop' 
