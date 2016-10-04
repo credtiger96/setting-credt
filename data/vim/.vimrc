@@ -80,6 +80,7 @@ filetype plugin indent on
 " This is Nerdtree 
 Plugin 'The-NERD-tree'
 nmap <F7> :NERDTreeToggle<CR> 
+let NERDTreeQuitOnOpen=1
 
 " sidebar indicating function, global variable list
 " Plugin 'Taglist' 
@@ -93,8 +94,12 @@ Plugin 'AutoComplPop'
 
 " Showing definition of variable of function that cursor poinys
 Plugin 'srcexpl' 
+nmap <F9> :SrcExplToggle<CR>
 
 
 """"""""""""""""""""""""""""""""
 " Initalization
 """""""""""""""""""""""""""""""""
+
+
+
