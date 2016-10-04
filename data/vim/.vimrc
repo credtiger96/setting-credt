@@ -89,10 +89,46 @@ nmap <F8> :Tlist<CR>
 let Tlist_Ctags_Cmd='/usr/bin/ctags'
 let Tlist_Use_Right_Window=1
 
-" Auto Completion
-Plugin 'AutoComplPop' 
+"Powerful autocomplete tool"-------------------------------------------------------------------
+Plugin 'neocomplcache'
 
-" Showing definition of variable of function that cursor poinys
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" " Use neocomplcache.
+let g:neocomplcache_enable_at_startup = 1
+" " Use smartcase.
+let g:neocomplcache_enable_smart_case = 1
+ " Set minimum syntax keyword length.
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+"
+" " Enable heavy features.
+" " Use camel case completion.
+let g:neocomplcache_enable_camel_case_completion = 1
+" " Use underbar completion.
+ "let g:neocomplcache_enable_underbar_completion = 1
+
+" " Define dictionary.
+ let g:neocomplcache_dictionary_filetype_lists = {
+     \ 'default' : '',
+         \ 'vimshell' : $HOME.'/.vimshell_hist',
+             \ 'scheme' : $HOME.'/.gosh_completions'
+        \ }
+
+" Define keyword.
+if !exists('g:neocomplcache_keyword_patterns')
+let g:neocomplcache_keyword_patterns = {}
+endif
+let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
+
+"POPUP COLOR
+
+hi Pmenu ctermbg=7
+hi PmenuSel ctermbg=1
+hi PmenuSbar ctermbg=3
+
+""-----------------------------------------------------------------------------------------
+" Showing definition of variable of function that cursor points
 Plugin 'srcexpl' 
 nmap <F9> :SrcExplToggle<CR>
 
