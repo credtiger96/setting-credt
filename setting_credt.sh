@@ -19,13 +19,13 @@ cp data/vim/.vimrc ~/.vimrc
 #setup vundle plugin management plugin 
 echo "check Vundle plugin installed ... " 
 
-VUNDLE_DIR="~/.vim/bundle/vundle"
+VUNDLE_DIR="$HOME/.vim/bundle/vundle"
 
 if [ -d "$VUNDLE_DIR" ]; then
+	echo "vundle...... OK."
+else 
 	echo "vundle is not installed. Installing vundle ..... "
 	git clone https://github.com/gmarik/Vundle.vim.git  "$VUNDLE_DIR"
-else 
-	echo "vundle...... OK."
 fi
 
 echo "setting up Vundle plugin Complete ...."
