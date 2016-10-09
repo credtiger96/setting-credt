@@ -42,6 +42,9 @@ set incsearch
 " auto indentation = 4 
 set shiftwidth=4
 
+" set filetype to CRLF
+set ff=dos
+
 " set C style Indentation 
 set cindent 
 " set auto indent 

@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 # Go to windows home 
-alias goToWinHome 'cd /mnt/c/Users/credt/'
+alias goToWinHome='cd /mnt/c/Users/credt/'
 
 
 
