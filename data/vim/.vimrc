@@ -17,7 +17,7 @@ filetype off
 "Color and Sheme 
 """"""""""""""""""""""""
 " Color Scheme
-colorscheme desert
+colorscheme pablo 
 " syntax highlight 
 syntax on 
 
