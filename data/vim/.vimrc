@@ -16,8 +16,11 @@ filetype off
 """"""""""""""""""""""""
 "Color and Sheme 
 """"""""""""""""""""""""
+
+
 " Color Scheme
-colorscheme pablo 
+colorscheme industry 
+
 " syntax highlight 
 syntax on 
 
@@ -149,6 +152,13 @@ let g:syntastic_check_on_wq = 0
 "let g:syntastic_debug = 1
 let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_option = "-std=c++14 -Wall -Wextra -Wpedantic"
+
+
+Plugin 'jacoborus/tender'
+if (has("termguicolor"))
+	set termguicolor
+endif 
+
 """"""""""""""""""""""""""""""""
 " Initalization
 """""""""""""""""""""""""""""""""
