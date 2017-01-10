@@ -19,7 +19,7 @@ filetype off
 
 
 " Color Scheme
-colorscheme industry 
+colorscheme evening  
 
 " syntax highlight 
 syntax on 

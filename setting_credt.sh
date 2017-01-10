@@ -5,6 +5,12 @@
 
 echo  "welcome, this is credt's settting script"
 
+echo "installing zsh..." 
+apt-get install zsh 
+
+echo "making zsh default shell...." 
+chsh -s 'which zsh'
+
 #setting up .bashrc file 
 echo "setting .bashrc file ....." 
 cp data/bash/.bashrc ~/.bashrc
