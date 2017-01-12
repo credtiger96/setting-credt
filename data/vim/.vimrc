@@ -19,7 +19,7 @@ filetype off
 
 
 " Color Scheme
-colorscheme evening  
+colorscheme default  
 
 " syntax highlight 
 syntax on 
