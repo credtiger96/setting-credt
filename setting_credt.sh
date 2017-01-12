@@ -4,12 +4,11 @@
 
 
 echo  "welcome, this is credt's settting script"
+echo 
 
-echo "installing zsh..." 
-apt-get install zsh 
-
-echo "making zsh default shell...." 
-chsh -s 'which zsh'
+echo "installing git ..." 
+apt-get install git 
+echo 
 
 #setting up .bashrc file 
 echo "setting .bashrc file ....." 
@@ -51,6 +50,18 @@ cp ./data/plugin/taglist_46/plugin/taglist.vim  "/usr/share/vim/$VIM_DIR/plugin/
 echo "installing vim plugins ..... " 
 
 vim +PluginInstall +qall 
+
+echo
+echo "installing zsh..." 
+echo 
+apt-get install zsh 
+
+echo
+echo "making zsh default shell...." 
+chsh -s 'which zsh'
+echo
+echo 'installing oh-my-zsh'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Complete. Enjoy!"
 
