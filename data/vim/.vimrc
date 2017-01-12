@@ -153,6 +153,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_option = "-std=c++14 -Wall -Wextra -Wpedantic"
 
+let g:syntastic_python_checkers = ['python']
 
 Plugin 'jacoborus/tender'
 if (has("termguicolor"))
